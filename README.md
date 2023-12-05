@@ -4,7 +4,7 @@
 
 The CarboMonitor API interface makes requests to the **Official Carbon Intensity API for Great Britain** to bring you up to date information about the country's carbon intensity.
 
-CarboMonitor currents returns data from the API across three different sections:
+CarboMonitor currently returns data from the API across three different sections:
 
 ### Current Carbon Intensity
 
