@@ -1,0 +1,247 @@
+* {
+  margin: 0;
+  font-family: 'Kumbh Sans', sans-serif;
+}
+
+#root {
+  position: relative;
+  min-height: 100vh;
+  text-align: center;
+  color: #30323d;
+}
+
+header {
+  position: sticky;
+  top: 0;
+  padding: 1.4rem 0;
+  border-bottom: 5px groove #5C80BC;
+  background: #E8C547;
+  text-shadow: 0 0 2px #eeeeee;
+}
+
+#header-title {
+  font-size: 2.2rem;
+}
+
+#header-title-span {
+  text-decoration: 0.3rem underline #5C80BC;
+  text-underline-offset: 0.4rem;
+}
+
+#header-caption {
+  margin: 1rem auto 0.8rem;
+  font-size: 1.2rem;
+}
+
+#header-text {
+  font-weight: 500;
+}
+
+main {
+  padding-bottom: 8rem;
+}
+
+#intro {
+  margin: auto;
+  padding: 1rem 1.2rem;
+  max-width: 800px;
+  text-align: justify;
+  font-size: 0.9rem;
+  line-height: 1.3rem;
+}
+
+.intro-body {
+  margin: 1rem auto;
+}
+
+#national-data,
+#regional-data {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+#national-intensity,
+#national-generation,
+#regional-search,
+#regional-intensity {
+  margin: 0 2rem 2rem;
+  border-radius: 3px;
+  padding: 1rem 1.2rem;
+  max-width: 360px;
+}
+
+#national-intensity {
+  border: 2px solid #CDD1C4;
+  background: #CDD1C4;
+}
+
+#national-generation {
+  background: #D1C4C7;
+  border: 2px solid #D1C4C7;
+}
+
+#national-intensity,
+#regional-search,
+#regional-intensity {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+#national-intensity-header,
+#national-generation-header,
+#regional-search-header,
+#regional-intensity-header {
+  font-size: 1.2rem;
+}
+
+#national-intensity-actual,
+#regional-intensity-actual {
+  margin: 1rem auto;
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+.national-intensity-body,
+.regional-intensity-body {
+  font-size: 0.9rem;
+  line-height: 1.4rem;
+  text-align: justify;
+}
+
+#national-intensity-body-a {
+  margin-bottom: 0.4rem;
+}
+
+#national-generation-table-headers {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  margin: 0.9rem auto;
+  font-weight: 500;
+}
+
+#national-generation-table {
+  list-style-type: none;
+  padding: 0;
+}
+
+#fuel-source {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  text-align: start;
+}
+
+li p {
+  text-align: center;
+  font-size: 0.9rem;
+  line-height: 1.4rem;
+}
+
+#regional-search,
+#regional-intensity {
+  border: 2px solid #C4D1CF;
+  background: #C4D1CF;
+}
+
+#postcode-form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+#postcode-input-label {
+  margin: 1rem 0;
+  font-size: 0.9rem;
+  text-align: justify;
+}
+
+#postcode-input {
+  margin-bottom: 1rem;
+  border: none;
+  border-radius: 4px;
+  padding: 0 0.6rem;
+  line-height: 1.6rem;
+}
+
+.search-error {
+  margin: auto auto 1rem;
+  font-size: 0.9rem;
+  color: rgb(240, 15, 15);
+  text-shadow: 0 0 2px 2px #30323d;
+}
+
+#hidden-error {
+  display: none;
+  visibility: hidden;
+}
+
+#displayed-error {
+  display: inherit;
+  visibility: inherit;
+}
+
+#regional-search-button {
+  margin: auto;
+  border: 1px solid #4d5061;
+  border-radius: 4px;
+  padding: 0.3rem 0.9rem;
+  width: 5rem
+}
+
+#regional-search-button:active {
+  background: #eeeeee;
+  border: 1px solid #eeeeee;
+}
+
+button:hover {
+  cursor: pointer;
+}
+
+footer {
+  position: absolute;
+  bottom: 0;
+  display: flex;
+  align-items: center;
+  border-top: 5px ridge #5C80BC;
+  background: #C8C4D1;
+  height: 8rem;
+  width: 100%;
+}
+
+#useful-links {
+  list-style-type: none;
+  margin: auto 1.8rem;
+  padding: 0;
+  text-align: justify;
+}
+
+#useful-links-header {
+  margin-bottom: 100px;
+  font-weight: 500;
+}
+
+#first-link {
+  margin-top: 0.4rem;
+}
+
+#useful-links li {
+  line-height: 1.4rem;
+  font-size: 0.9rem;
+}
+
+#scroll-up-button {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  border: none;
+  border-radius: 10px 0 0 0;
+  padding: 0.5rem 0.9rem;
+  background: #E8C547;
+  box-shadow: 0 0 6px #4d5061;
+  font-weight: 500;
+}
+
+#scroll-up-button:active {
+  box-shadow: none;
+}
