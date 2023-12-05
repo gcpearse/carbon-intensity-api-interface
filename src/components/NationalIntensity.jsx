@@ -31,7 +31,7 @@ const NationalIntensity = () => {
       <h3 id="national-intensity-header">Current Carbon Intensity</h3>
       <p id="national-intensity-actual">{intensityData.intensity.actual || "-"}</p>
       <p className="national-intensity-body" id="national-intensity-body-a">Carbon intensity in Great Britain is currently {intensityData.intensity.index}. The forecast carbon intensity for today is {intensityData.intensity.forecast} gCO<sub>2</sub>/kWh.</p>
-      <p className="national-intensity-body">These readings are for the period {intensityData.from.match(timeRegex)} - {intensityData.to.match(timeRegex)} on {lengthenDate(intensityData.from.match(yearRegex)[0])}.</p>
+      <p className="national-intensity-body">The current reading is for the period {intensityData.from.match(timeRegex)} - {intensityData.to.match(timeRegex)} on {lengthenDate(intensityData.from.match(yearRegex)[0])}.</p>
     </div>
   );
 };
