@@ -60,7 +60,7 @@ You may then run the following commands:
 npm install
 ```
 
-This will install all required NPM packages..
+This will install all required NPM packages.
 
 ```
 npm run dev
