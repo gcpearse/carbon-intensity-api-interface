@@ -16,7 +16,7 @@ This section provides a breakdown of the fuel sources currently being used to ge
 
 ### Regional Search
 
-Users can also take advantage of the Regional Search box to view the carbon intensity forecast for their region. If a user make a bad request, an error message is shown but they are able to try again.
+Users can also take advantage of the Regional Search box to view the carbon intensity forecast for their region.
 
 ## Optimisation
 
