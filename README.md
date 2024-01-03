@@ -48,7 +48,7 @@ git push -u origin main
 
 ### Prerequisites
 
-Please ensure you have installed Node.js. Certain versions of Node may not be able to run this project, so if you encounter any issues, that may be the cause of the problem. At the time of writing, `v18.17.1` is working well, but `v20.6.0` is not.
+Please ensure you have installed Node.js.
 
 ### Installing Packages and Running the Project
 
