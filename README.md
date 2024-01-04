@@ -4,6 +4,8 @@
 
 The CarboMonitor API interface makes requests to the **Official Carbon Intensity API for Great Britain** to bring you up to date information about the country's carbon intensity.
 
+The hosted version of this application can be accessed [here](https://carbomonitor.netlify.app).
+
 CarboMonitor currently returns data from the API across three different sections:
 
 ### Current Carbon Intensity
@@ -21,8 +23,6 @@ Users can also take advantage of the Regional Search box to view the carbon inte
 ## Optimisation
 
 The app is optimised for mobile, but also works well on desktop displays.
-
-This is a standalone mini project that may be updated in the future.
 
 ## Local Setup Instructions
 
