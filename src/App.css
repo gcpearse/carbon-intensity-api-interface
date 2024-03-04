@@ -231,10 +231,11 @@ footer {
   font-size: 0.9rem;
 }
 
-#scroll-up-button {
+.scroll-up-button {
   position: fixed;
-  bottom: 0;
+  bottom: -40px;
   right: 0;
+  transition: 0.8s;
   border: none;
   border-radius: 10px 0 0 0;
   padding: 0.5rem 0.9rem;
@@ -244,6 +245,10 @@ footer {
   color: #30323d;
 }
 
-#scroll-up-button:active {
+.visible-button {
+  bottom: 0;
+}
+
+.scroll-up-button:active {
   box-shadow: none;
 }
