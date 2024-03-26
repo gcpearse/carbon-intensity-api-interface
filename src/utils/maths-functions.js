@@ -1,10 +1,17 @@
 const lengthenDate = (date) => {
+
   const day = date.split("-")[2];
+
   const month = date.split("-")[1];
+
   const year = date.split("-")[0];
+
   const reformattedDate = new Date(`${month}/${day}/${year}`).toDateString().split(" ");
+
   const numDay = Number(reformattedDate[2]);
+
   const lengthenedDate = [];
+
   const days = {
     "Mon": "Monday",
     "Tue": "Tuesday",
@@ -14,6 +21,7 @@ const lengthenDate = (date) => {
     "Sat": "Saturday",
     "Sun": "Sunday",
   };
+
   const months = {
     "Jan": "January",
     "Feb": "February",
@@ -28,11 +36,13 @@ const lengthenDate = (date) => {
     "Nov": "November",
     "Dec": "December"
   };
+
   for (let day in days) {
     if (reformattedDate[0] === day) {
       lengthenedDate.push(days[day]);
     }
   }
+
   if (numDay === 1 || numDay === 21 || numDay === 31) {
     lengthenedDate.push(`${numDay}st`);
   } else if (numDay === 2 || numDay === 22) {
@@ -42,13 +52,17 @@ const lengthenDate = (date) => {
   } else {
     lengthenedDate.push(`${numDay}th`);
   }
+
   for (let month in months) {
     if (reformattedDate[1] === month) {
       lengthenedDate.push(months[month]);
     }
   }
+
   lengthenedDate.push(year);
+
   return lengthenedDate.join(" ");
 };
+
 
 export default lengthenDate;
