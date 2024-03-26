@@ -1,6 +1,8 @@
 import axios from "axios";
 
+
 const api = axios.create({ baseURL: "https://api.carbonintensity.org.uk" });
+
 
 const getIntensityData = async () => {
   try {
@@ -11,6 +13,7 @@ const getIntensityData = async () => {
   }
 };
 
+
 const getGenerationData = async () => {
   try {
     const res = await api.get("/generation");
@@ -19,5 +22,6 @@ const getGenerationData = async () => {
     console.log(err);
   }
 };
+
 
 export { getIntensityData, getGenerationData };
