@@ -38,7 +38,7 @@ const RegionalData = () => {
 
 
   return (
-    <section id="regional-data">
+    <section className="data-section">
 
       <RegionalSearch errorStyle={errorStyle} setPostcode={setPostcode} />
 

@@ -6,7 +6,7 @@ const NationalData = () => {
 
 
   return (
-    <section id="national-data">
+    <section className="data-section">
 
       <NationalIntensity />
 
