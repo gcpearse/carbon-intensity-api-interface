@@ -19,21 +19,21 @@ header {
   text-shadow: 0 0 2px #eeeeee;
 }
 
-#header-title {
+h1 {
   font-size: 2.2rem;
 }
 
-#header-title-span {
+h1 span {
   text-decoration: 0.3rem underline #5C80BC;
   text-underline-offset: 0.4rem;
 }
 
-#header-caption {
+h2 {
   margin: 1rem auto 0.8rem;
   font-size: 1.2rem;
 }
 
-#header-text {
+header p {
   font-weight: 500;
 }
 
@@ -41,7 +41,7 @@ main {
   padding-bottom: 8rem;
 }
 
-#intro {
+.intro-section {
   margin: auto;
   padding: 1rem 1.2rem;
   max-width: 800px;
@@ -50,71 +50,58 @@ main {
   line-height: 1.3rem;
 }
 
-.intro-body {
+.intro-section p {
   margin: 1rem auto;
 }
 
-#national-data,
-#regional-data {
+.data-section {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
 }
 
-#national-intensity,
-#national-generation,
-#regional-search,
-#regional-intensity {
+.card {
   margin: 0 2rem 2rem;
   border-radius: 3px;
   padding: 1rem 1.2rem;
   max-width: 360px;
 }
 
-#national-intensity {
+#national-intensity-card {
   border: 2px solid #CDD1C4;
   background: #CDD1C4;
 }
 
-#national-generation {
+#national-generation-card {
   background: #D1C4C7;
   border: 2px solid #D1C4C7;
 }
 
-#national-intensity,
-#regional-search,
-#regional-intensity {
+#national-intensity-card,
+#regional-search-card,
+#regional-intensity-card {
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
 }
 
-#national-intensity-header,
-#national-generation-header,
-#regional-search-header,
-#regional-intensity-header {
+h3 {
   font-size: 1.2rem;
 }
 
-#national-intensity-actual,
-#regional-intensity-actual {
+.intensity-reading {
   margin: 1rem auto;
   font-size: 2rem;
   font-weight: 700;
 }
 
-.national-intensity-body,
-.regional-intensity-body {
+.intensity-text {
   font-size: 0.9rem;
   line-height: 1.4rem;
   text-align: justify;
 }
 
-#national-intensity-body-a {
-  margin-bottom: 0.4rem;
-}
-
-#national-generation-table-headers {
+.table-headers {
   display: grid;
   grid-template-columns: 50% 50%;
   margin: 0.9rem auto;
@@ -126,31 +113,31 @@ main {
   padding: 0;
 }
 
-#fuel-source {
+.fuel-source {
   display: grid;
   grid-template-columns: 50% 50%;
   text-align: start;
 }
 
-li p {
+#national-generation-table li p {
   text-align: center;
   font-size: 0.9rem;
   line-height: 1.4rem;
 }
 
-#regional-search,
-#regional-intensity {
+#regional-search-card,
+#regional-intensity-card {
   border: 2px solid #C4D1CF;
   background: #C4D1CF;
 }
 
-#postcode-form {
+form {
   display: flex;
   flex-direction: column;
   justify-content: center;
 }
 
-#postcode-input-label {
+label {
   margin: 1rem 0;
   font-size: 0.9rem;
   text-align: justify;
@@ -182,7 +169,7 @@ li p {
   visibility: inherit;
 }
 
-#regional-search-button {
+.search-btn {
   margin: auto;
   border: 1px solid #4d5061;
   border-radius: 4px;
@@ -190,7 +177,7 @@ li p {
   color: #30323d;
 }
 
-#regional-search-button:active {
+.search-btn:active {
   background: #eeeeee;
   border: 1px solid #eeeeee;
 }
@@ -217,13 +204,9 @@ footer {
   text-align: justify;
 }
 
-#useful-links-header {
+#useful-links span {
   margin-bottom: 100px;
   font-weight: 500;
-}
-
-#first-link {
-  margin-top: 0.4rem;
 }
 
 #useful-links li {
