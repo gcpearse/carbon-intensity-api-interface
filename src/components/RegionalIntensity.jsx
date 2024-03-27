@@ -5,17 +5,15 @@ const RegionalIntensity = ({ regionalData }) => {
 
 
   return (
-    <div id="regional-intensity">
+    <div className="card" id="regional-intensity-card">
 
-      <h3 id="regional-intensity-header">
-        Carbon Intensity Forecast for {regionalData.shortname}
-      </h3>
+      <h3>Carbon Intensity Forecast for {regionalData.shortname}</h3>
 
-      <p id="regional-intensity-actual">
+      <p className="intensity-reading">
         {intensity.forecast || "-"}
       </p>
 
-      <p className="regional-intensity-body">
+      <p className="intensity-text">
         The forecast carbon intensity for {regionalData.shortname} ({regionalData.postcode}) is {intensity.index}.
       </p>
 

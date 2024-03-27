@@ -14,6 +14,16 @@ const getIntensityData = async () => {
 };
 
 
+const getIntensityDataByPostcode = async (postcode) => {
+  try {
+    const res = await api.get(`/regional/postcode/${postcode}`);
+    return res.data;
+  } catch (err) {
+    console.log(err);
+  }
+};
+
+
 const getGenerationData = async () => {
   try {
     const res = await api.get("/generation");
@@ -24,4 +34,8 @@ const getGenerationData = async () => {
 };
 
 
-export { getIntensityData, getGenerationData };
+export {
+  getIntensityData,
+  getIntensityDataByPostcode,
+  getGenerationData
+};

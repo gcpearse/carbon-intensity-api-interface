@@ -4,11 +4,11 @@ const Header = () => {
   return (
     <header>
 
-      <h1 id="header-title">Carbo<span id="header-title-span">Monitor</span></h1>
+      <h1>Carbo<span>Monitor</span></h1>
 
-      <h2 id="header-caption">Track the nation's carbon intensity</h2>
+      <h2>Track the nation's carbon intensity</h2>
 
-      <p id="header-text">API developed by the National Grid</p>
+      <p>API developed by the National Grid</p>
 
     </header>
   );

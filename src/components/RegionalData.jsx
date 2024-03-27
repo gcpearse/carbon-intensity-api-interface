@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import RegionalIntensity from "./RegionalIntensity";
 import RegionalSearch from "./RegionalSearch";
 import axios from "axios";
+import { getIntensityDataByPostcode } from "../utils/api";
 
 
 const RegionalData = () => {
@@ -11,24 +12,21 @@ const RegionalData = () => {
 
   const [isLoading, setIsLoading] = useState(true);
 
-  const [errorStyle, setErrorStyle] = useState("hidden-error");
+  const [isInputError, setIsInputError] = useState(false);
 
   const [postcode, setPostcode] = useState("sw1a");
 
 
   useEffect(() => {
-    axios.get(`https://api.carbonintensity.org.uk/regional/postcode/${postcode}`)
-      .then((res) => {
-        return res.data;
-      })
+    getIntensityDataByPostcode(postcode)
       .then(({ data }) => {
         setRegionalData(data[0]);
-        setErrorStyle("hidden-error");
+        setIsInputError(false);
         setIsLoading(false);
       })
       .catch((err) => {
         console.log(err);
-        setErrorStyle("displayed-error");
+        setIsInputError(true);
         setIsLoading(false);
       });
   }, [postcode]);
@@ -38,9 +36,9 @@ const RegionalData = () => {
 
 
   return (
-    <section id="regional-data">
+    <section className="data-section">
 
-      <RegionalSearch errorStyle={errorStyle} setPostcode={setPostcode} />
+      <RegionalSearch isInputError={isInputError} setPostcode={setPostcode} />
 
       <RegionalIntensity regionalData={regionalData} />
 
