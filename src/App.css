@@ -159,16 +159,6 @@ label {
   text-shadow: 0 0 2px 2px #30323d;
 }
 
-#hidden-error {
-  display: none;
-  visibility: hidden;
-}
-
-#displayed-error {
-  display: inherit;
-  visibility: inherit;
-}
-
 .search-btn {
   margin: auto;
   border: 1px solid #4d5061;
