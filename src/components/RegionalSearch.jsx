@@ -1,7 +1,7 @@
 import { useState } from "react";
 
 
-const RegionalSearch = ({ errorStyle, setPostcode }) => {
+const RegionalSearch = ({ isInputError, setPostcode }) => {
 
 
   const [input, setInput] = useState("");
@@ -37,9 +37,13 @@ const RegionalSearch = ({ errorStyle, setPostcode }) => {
           value={input}
           onChange={handleChange} />
 
-        <p className="search-error" id={errorStyle}>
-          Invalid postcode. Please try again.
-        </p>
+        {isInputError ? (
+          <p className="search-error">
+            Invalid postcode. Please try again.
+          </p>
+        ) : (
+          null
+        )}
 
         <button className="search-btn">
           Submit

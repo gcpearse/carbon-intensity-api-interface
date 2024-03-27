@@ -12,7 +12,7 @@ const RegionalData = () => {
 
   const [isLoading, setIsLoading] = useState(true);
 
-  const [errorStyle, setErrorStyle] = useState("hidden-error");
+  const [isInputError, setIsInputError] = useState(false);
 
   const [postcode, setPostcode] = useState("sw1a");
 
@@ -21,12 +21,12 @@ const RegionalData = () => {
     getIntensityDataByPostcode(postcode)
       .then(({ data }) => {
         setRegionalData(data[0]);
-        setErrorStyle("hidden-error");
+        setIsInputError(false);
         setIsLoading(false);
       })
       .catch((err) => {
         console.log(err);
-        setErrorStyle("displayed-error");
+        setIsInputError(true);
         setIsLoading(false);
       });
   }, [postcode]);
@@ -38,7 +38,7 @@ const RegionalData = () => {
   return (
     <section className="data-section">
 
-      <RegionalSearch errorStyle={errorStyle} setPostcode={setPostcode} />
+      <RegionalSearch isInputError={isInputError} setPostcode={setPostcode} />
 
       <RegionalIntensity regionalData={regionalData} />
 
