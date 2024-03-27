@@ -20,15 +20,13 @@ const RegionalSearch = ({ errorStyle, setPostcode }) => {
 
 
   return (
-    <div id="regional-search">
+    <div className="card" id="regional-search-card">
 
-      <h3 id="regional-search-header">
-        Regional Search
-      </h3>
+      <h3>Regional Search</h3>
 
-      <form onSubmit={handleSubmit} id="postcode-form">
+      <form onSubmit={handleSubmit}>
 
-        <label htmlFor="postcode-input" id="postcode-input-label">
+        <label htmlFor="postcode-input">
           Enter the first part of your postcode (e.g. SW1A) to display the carbon intensity forecast for your region.
         </label>
 
@@ -43,7 +41,7 @@ const RegionalSearch = ({ errorStyle, setPostcode }) => {
           Invalid postcode. Please try again.
         </p>
 
-        <button id="regional-search-button">
+        <button className="search-btn">
           Submit
         </button>
 

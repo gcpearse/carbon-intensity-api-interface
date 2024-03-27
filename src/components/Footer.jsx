@@ -20,11 +20,11 @@ const Footer = () => {
     <footer>
       <ul id="useful-links">
 
-        <span id="useful-links-header">
+        <span>
           Useful links
         </span>
 
-        <li id="first-link">
+        <li style={{marginTop: "0.4rem"}}>
           <a href="https://www.nationalgrid.com/uk" target="_blank">
             National Grid
           </a>

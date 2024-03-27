@@ -35,21 +35,15 @@ const NationalGenerationMix = () => {
 
 
   return (
-    <div id="national-generation">
+    <div className="card" id="national-generation-card">
 
-      <h3 id="national-generation-header">
-        Current Generation Mix
-      </h3>
+      <h3>Current Generation Mix</h3>
 
-      <div id="national-generation-table-headers">
+      <div className="table-headers">
 
-        <p className="national-generation-header">
-          Fuel source
-        </p>
+        <p>Fuel source</p>
 
-        <p className="national-generation-header">
-          % of total
-        </p>
+        <p>% of total</p>
 
       </div>
 
@@ -58,7 +52,7 @@ const NationalGenerationMix = () => {
           .sort((a, b) => b.perc - a.perc)
           .map((source) => {
             return (
-              <li key={source.fuel} id="fuel-source">
+              <li key={source.fuel} className="fuel-source">
                 <p>{source.fuel[0].toUpperCase()}{source.fuel.slice(1)}</p>
                 <p>{source.perc}</p>
               </li>
